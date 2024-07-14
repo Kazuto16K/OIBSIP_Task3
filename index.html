@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="temp-container">
+            <div class="heading"><h2>TEMPERATURE CONVERTER</h2></div>
+            <div class="inp-out-section">
+                <input type="number" id="inputValue" placeholder="Enter temperature">
+                <input type="text" id="outputValue" placeholder="Ouput" disabled>
+            </div>
+            <div class="tempsel-section">
+                <div class="input-sel">
+                    <p>Convert From:</p>
+                    <div class="unit-selection">
+                        <label class="custom-radio">
+                            <input type="radio" name="inputUnit" value="C" checked>
+                            <span class="custom-radio-button"></span>
+                            Celsius
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="inputUnit" value="F">
+                            <span class="custom-radio-button"></span>
+                            Fahrenheit
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="inputUnit" value="K">
+                            <span class="custom-radio-button"></span>
+                            Kelvin
+                        </label>
+                    </div>
+                    </div>
+                    <div class="output-sel">
+                        <p>Convert To:</p>
+                        <div class="unit-selection">
+                            
+                            <label class="custom-radio">
+                                <input type="radio" name="outputUnit" value="C" checked>
+                                <span class="custom-radio-button"></span>
+                                Celsius
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="outputUnit" value="F">
+                                <span class="custom-radio-button"></span>
+                                Fahrenheit
+                            </label>
+                            <label class="custom-radio">
+                                <input type="radio" name="outputUnit" value="K">
+                                <span class="custom-radio-button"></span>
+                                Kelvin
+                            </label>
+                        </div>
+                    </div>
+            </div>
+            <div class="convert-section">
+                <button class="convert-btn" onclick="ConvertTemperature()">Convert</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
